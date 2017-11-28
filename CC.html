@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            height:100%;
+        }
+
+        .wrapper {
+            min-height: 100%;
+            width: 100%;
+            position: relative;
+            text-align: center;
+        }
+
+        body {
+            height: 100%;
+            background: #ddd;
+        }
+
+        h2 {
+            padding: 50px;
+            background: #112233;
+            color: #F0F1F5;
+            font-family: "monospace";
+            text-align: center;
+            font-size: 30px;
+            letter-spacing: 15px;
+        }
+
+        .navigationDesktop {
+            background: #FC575E;
+        }
+
+        nav {
+            height: 40px;
+            width: 560px;
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            text-transform: capitalize;
+        }
+
+        nav a {
+            display: block;
+            text-decoration: none;
+            font-family: monospace;
+            font-weight: bold;
+            font-size: 13pt;
+            color: #112233;
+        }
+
+        nav a:hover {
+            background: #223433;
+            color: #F0F1F5;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            float: left;
+            width: 140px;
+            height: 40px;
+            line-height: 40px;
+            background: #FC575E;
+        }
+
+        nav ul ul li {
+            position: relative;
+            display: none;
+        }
+
+        nav ul ul ul {
+            display: none;
+        }
+
+        nav ul li:hover ul li {
+            display: block;
+            animation: navmenu 500ms forwards;
+        }
+
+        @keyframes navmenu {
+            0% {
+                opacity: 0;
+                top: 25px;
+            }
+            100% {
+                opacity: 1;
+                top: 0;
+            }
+        }
+
+        nav ul ul li:hover ul {
+            display: block;
+            position: absolute;
+            width: 140px;
+            left: 140px;
+            top: 0;
+        }
+
+        nav ul li ul li#everyone a {
+            font-family: sans-serif;
+            font-size: 13px;
+        }
+
+        nav u li ul li#everyone a:hover {
+            background: #223433;
+            color: #F0F1F5;
+        }
+        /* Style The Dropdown Button */
+        .dropbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* The container <div> - needed to position the dropdown content */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Dropdown Content (Hidden by Default) */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Change color of dropdown links on hover */
+        .dropdown-content a:hover {background-color: #f1f1f1}
+
+        /* Show the dropdown menu on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Change the background color of the dropdown button when the dropdown content is shown */
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+        body {
+            background-color: #8E3E8B;
+        }
+
+        h2 {
+            background-color: #112233;
+            padding-bottom: 20px;
+        }
+
+        a {
+            color: #FFFFFF;
+        }
+
+        article {
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        p a {
+            color: blueviolet;
+        }
+
+        h3 {
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Charlie Practice Website</title>
+</head>
+<body>
+    <h1 class = title>Hello World!! Hi</h1>
+
+
+    <div class="dropdown">
+        <button class="dropbtn">Dropdown Menu</button>
+        <div class="dropdown-content">
+            <a href="http://aworldbridge.com/real-time-projects/nasa-opencitysmart---sustai.html">NASA City Smart</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <header>
+            <h2>FTAA World Bridge</h2>
+            <h3><target><a href="http://aworldbridge.com/">NASA World Bridge</a></target></h3>
+        </header>
+        <div class="navigationDesktop">
+        <nav>
+            <ul>
+                <li><a href="#">FTAA Water</a>
+                    <ul>
+                        <li>Building A</li>
+                        <li>Building B</li>
+                        <li>Building C</li>
+                    </ul>
+                </li>
+                <li><a href="#">FTAA UAS</a>
+                    <ul>
+                        <li>Jesse</li>
+                        <li>Sylvia</li>
+                        <li>Annie</li>
+                        <li>Zedong</li>
+                    </ul>
+                </li>
+                <li><a href="#">NASA CS</a>
+                    <ul>
+                        <li>Charlie</li>
+                        <li id="everyone"><a href="#">Everyone Else</a>
+                            <ul>
+                                <li>Huaqi</li>
+                                <li>Julia</li>
+                                <li>Trueman</li>
+                                <li>Everyone Else</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        </div>
+        <article>
+                “In addition to dance training, our teachers also emphasize the importance of moral excellence and upright conduct,
+                because not only are these important aspects of bringing forth beautiful dance movements,
+                they also form the baseline of being a good person and a positive member of society.”
+            - <a href="http://www.feitianacademy.org/"><target> Charlie Cai, 9th Grade</target></a>
+        </article>
+
+        <h3>Our Mission (NASA FAO Lucust Swarm Prevention</h3>
+        <p>Our Mission is to partner with NASA and United Nations to help prevent Locust and armyworm caterpillar swarms from eradicating farmland in Africa.</p>
+        <img src="http://cdn.primedia.co.za/primedia-broadcasting/image/upload/c_fill,h_289,q_70,w_463/klzezx1ryvcimkmixoyl" width="400">
+
+    </div>
+
+
+    <footer>
+        Charlie Cai &copy; 2017
+    </footer>
+</body>
+</html>
